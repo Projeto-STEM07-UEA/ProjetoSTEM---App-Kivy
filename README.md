@@ -46,11 +46,11 @@ Manager:
 	Avancado:
 		name:'avancado'
 
-<MenuButton@Button>:
-	font_size:'50sp'
-	background_normal:'menuButton.png'
-	background_down:'menuButtonpressed.png'
-	border: 90,90,90,90
+#<MenuButton@Button>:
+	#font_size:'50sp'
+	#background_normal:'menuButton.png'
+	#background_down:'menuButtonpressed.png'
+	#border: 90,90,90,90
 
 <Menu>:
 	BoxLayout:
@@ -69,11 +69,11 @@ Manager:
 		BoxLayout:
 			padding:"100dp"
 			spacing:"150dp"
-			MenuButton:
+			Button:
 				text:'Start'
 				on_press:
 				on_release:app.root.current = 'game'
-			MenuButton:
+			Button:
 				text:'Exit'
 				on_press:
 				on_release:app.Stop()
